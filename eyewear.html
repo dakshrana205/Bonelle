@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width, initial-scale=1.0">
+	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="search.css">
+	<link rel="stylesheet" href="watches.css">
+	<!-- Load icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<title>omniwatches</title>
+	<body style="font-family:Verdana; background-color: white;">
+		<!--Navigation Bar Starts-->
+		<div class="navbar" id="mynavbar" style="position:fixed;">
+			<a href="HOMEPAGE.html"><img src="Screenshot 2024-02-21 at 8.10.52 PM.png" height="30px" class="res-logo"></a>
+			<div>
+				<a href="watches.html">Watches</a>
+				<a href="eyewear.html">Eye Wear</a>
+				<a href="bags.html">Bags</a>
+				<a href="loginsignup.html" class="sign-in" style="float:right;">Sign In</a>
+				<form>
+					<button type="submit" class="cart-search" style="width:40px;" formaction="cart.html">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+					</button>
+				</form>
+				<button type="submit" class="cart-search"onclick="dropFunction()" style="width:40px;">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+			<a href="#dropdown" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+    <br>
+    <br>
+    <br>
+		<div id="myDropdown" class="dropdown-content">
+			<input type="search" placeholder="Search.." id="myInput" onkeyup="filterFunction()" class="cart-search" style="border: none; border-bottom: 2px solid #4b91f1; margin-right:0px; border-radius: 10px 10px 0px 0px; width: 100%; margin-top: 0px; margin-right:0px;">
+			<br><br>
+			<a href="watches.html">Watches</a>
+			<a href="bags.html">Bag</a>
+			<a href="eyewear.html">Eye Wear</a>
+		</div>
+		<img src="Desktop_Strip_25_100823.jpg.webp" width="100%">
+        <div class="main-body">
+            <h1 style="border-bottom: 1px solid black; padding:10px;">
+                <center>
+                    Eye Wear
+                </center>
+            </h1>
+            <div class="all-cards">
+                <a href="eyewear1.html" class="card" style="grid-column-start: 3; grid-column-end: 3; text-decoration: none;">
+					<br>
+					<br>
+                  <img src="eyewear1.webp" width=100% height="100%">
+                  <h3>
+					Matte Black Full Frame Aviator Color Blind Glasses
+                  </h3>
+                  <p class="price">₹899.00</p>
+                  <!-- <p><button>Add to Cart</button></p> -->
+                </a>
+                <a href="eyewear2.html" class="card" style="grid-column-start: 4; grid-column-end: 4; text-decoration: none;">
+                  <img src="eyewear2.webp" width=100%>
+                  <h3>
+                    Black Tinted Wraparound Sunglasses For Men
+                  </h3>
+                  <p class="price">₹899.00</p>
+                  <!-- <p><button>Add to Cart</button></p> -->
+                </a>
+                <a href="eyewear3.html" class="card" style="grid-column-start: 5; grid-column-end: 5; text-decoration: none;">
+                  <img src="eyewear3.webp" width=100%>
+                  <h3>
+					Blue Tinted Aviator Sunglasses
+                  </h3>
+                  <p class="price">₹899.00</p>
+                  <!-- <p><button>Add to Cart</button></p> -->
+                </a>
+                <a href="eyewear4.html" class="card" style="grid-column-start: 6; grid-column-end: 6; text-decoration: none;">
+                  <img src="eyewear4.webp" width=100%>
+                  <h3>
+					Yellow Tinted Aviator Sunglasses 
+                  </h3>
+                  <p class="price">₹899.00</p>
+                  <!-- <p><button>Add to Cart</button></p> -->
+                </a>
+            </div>
+			<!-- <img src="Desktop_Strip_25_100823.jpg.webp" width="100"> -->
+			<div class="main-body">
+				<div class="all-cards">
+					<a href="eyewear5.html" class="card" style="grid-column-start: 3; grid-column-end: 3; text-decoration: none;">
+					  <img src="eyewear5.webp" width=100% height="200%">
+					  <h3>
+						Black Full Rim Geometric Pink Gradient Aviator Sunglasses
+					  </h3>
+					  <p class="price">₹899.00</p>
+					  <!-- <p><button>Add to Cart</button></p> -->
+					</a>
+					<a href="eyewear6.html" class="card" style="grid-column-start: 4; grid-column-end: 4; text-decoration: none;">
+					  <img src="eyewear6.png" width=100%>
+					  <h3>
+						Blue Gradient Aviator Sunglasses For Kids
+					  </h3>
+					  <p class="price">₹899.00</p>
+					  <!-- <p><button>Add to Cart</button></p> -->
+					</a>
+					<a href="eyewear7.html" class="card" style="grid-column-start: 5; grid-column-end: 5; text-decoration: none;">
+					  <img src="eyewear7.webp" width=100%>
+					  <h3>
+						Golden Tortoise Full Rim Aviator Wayfarer Sunglasses
+					  </h3>
+					  <p class="price">₹899.00</p>
+					  <!-- <p><button>Add to Cart</button></p> -->
+					</a>
+					<a href="eyewear8.html" class="card" style="grid-column-start: 6; grid-column-end: 6; text-decoration: none;">
+					  <img src="eyewear8.webp" width=100%>
+					  <h3>
+						Pink Gold Full Rim Cat Eye
+					  </h3>
+					  <p class="price">₹899.00</p>
+					  <!-- <p><button>Add to Cart</button></p> -->
+					</a>
+				</div>
+        </div>
+        <br/>	
+		<br/>
+		<div style="background-color:black; color:white;">
+			<table style="width:100%;">
+				<tr>
+					<th>Customer Services<div class="showHide"><br></div><hr></th>
+					<th>About Bonelle<div class="showHide"><br></div><hr></th>
+					<th>Policies<br><span class="showHide"><br></span><hr></th>
+				</tr>
+				<tr style="background-color:black;">
+					<td><a href="#pay-options" style="color:white;">Payment Options</a></td>
+					<td><a href="#about-us" style="color:white;">About Us</a></td>
+					<td><a href="#returns-and-exchanges" style="color:white;">Returns and Exchanges</a></td>
+				</tr>
+				<tr>
+					<td><a href="#track-order" style="color:white;">Track Order</a></td>
+					<td><a href="#careers" style="color:white;">Careers</a></td>
+					<td><a href="#cancellation" style="color:white;">Cancellation</a></td>
+				</tr>
+				<tr style="background-color:black;">
+					<td><a href="#find-a-store" style="color:white;">Find a Store</a></td>
+					<td><a href="#Warranty-Policies" style="color:white;">FAQs</a></td>
+					<td><a href="#Warranty/Guarantee" style="color:white;">Warranty / Guarantee</a></td>
+				</tr>
+			</table>
+			<div class="hideShow" style="background-color: black;">
+				
+				<hr>
+				<center>
+					<a href="google-play-store"><img src="gpb.webp" height="70px"></a>
+					<a href="app-store"><img src="asb.svg" height="70px"></a>
+				</center>
+			</div>
+			<hr>
+			<center style="color:grey;"><span class="fa fa-copyright"></span> 2024 Bonelle Company Limited. All Rights Reserved.</center><br>	
+		</div>
+    </body>
+	<script src="search.js"></script>
+</html>

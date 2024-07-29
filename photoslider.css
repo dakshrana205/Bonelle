@@ -1,0 +1,100 @@
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width:40%;
+    display:grid;
+    padding:5px;
+    gap:40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 740px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 70px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        position: none;
+        width: 100%;
+        display: block;
+        padding: 0px;
+        gap: 0px;
+    }
+    .numbertext {
+        padding:60px 12px;
+        font-weight: bolder;
+    }
+    .prev, .next {
+        margin-top:-340px;
+    }
+    .next {
+        right:15px;
+    }
+}

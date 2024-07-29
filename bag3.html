@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width, initial-scale=1.0">
+	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="search.css">
+	<link rel="stylesheet" href="photoslider.css">
+	<!-- Load icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<title>omniwatches</title>
+	<body style="font-family:Verdana;">
+		<!--Navigation Bar Starts-->
+		<div class="navbar" id="mynavbar" style="position:fixed;">
+			<a href="HOMEPAGE.html"><img src="Screenshot 2024-02-21 at 8.10.52 PM.png" height="30px" class="res-logo"></a>
+			<div>
+				<a href="watches.html">Watches</a>
+				<a href="eyewear.html">Eye Wear</a>
+				<a href="bags.html">Bags</a>
+				<a href="loginsignup.html" class="sign-in" style="float:right;">Sign In</a>
+				<form>
+					<button type="submit" class="cart-search" style="width:40px;" formaction="cart.html">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+					</button>
+				</form>
+				<button type="submit" class="cart-search"onclick="dropFunction()" style="width:40px;">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+			<a href="#dropdown" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div id="myDropdown" class="dropdown-content">
+			<input type="search" placeholder="Search.." id="myInput" onkeyup="filterFunction()" class="cart-search" style="border: none; border-bottom: 2px solid #4b91f1; margin-right:0px; border-radius: 10px 10px 0px 0px; width: 100%; margin-top: 0px; margin-right:0px;">
+			<br><br>
+			<a href="watches.html">Watches</a>
+			<a href="bags.html">Bag</a>
+			<a href="eyewear.html">Eye Wear</a>
+		</div>
+		<br>
+		<!--Images of the watch-->
+		<div class="bi">
+			<div class="container div1">
+				<br>
+				<div style="width: 100%;">
+					<div class="mySlides">
+						<div class="numbertext">1/4</div>
+						<img src="bag3.webp" style="width:85%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="bag31.webp" style="width:80%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="bag32.webp" style="width:80%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="bag33.webp" style="width:80%">
+					</div>
+					<a class="prev" onclick="PNSlide(-1)">❮</a>
+					<a class="next" onclick="PNSlide(1)">❯</a>
+			
+					<hr>
+			
+					<div class="row">
+						<div class="column">
+							<img class="demo cursor" src="bag3.webp" style="width:100%" onclick="currentSlide(1)">
+						</div>  
+						<div class="column">
+							<img class="demo cursor" src="bag31.webp" style="width:90%" onclick="currentSlide(2)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="bag32.webp" style="width:90%" onclick="currentSlide(3)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="bag33.webp" style="width:90%" onclick="currentSlide(4)">
+						</div>
+					</div>
+				</div>
+			<!--Headings and price-->
+				<div class="div2">
+					<h2 style="text-align:justify;">
+						Nicole & Doris Classic Pattern Messenger Bag
+					</h2>
+					<!-- <h6 style="color:rgb(80, 80, 80);">
+						Smart
+					</h6> -->
+					<!--Rating Button-->
+					<span class="fa fa-star checked" onclick="checkUncheck"></span>
+					<span class="fa fa-star checked" onclick="checkUncheck"></span>
+					<span class="fa fa-star checked" onclick="checkUncheck"></span>
+					<span class="fa fa-star checked" onclick="checkUncheck"></span>
+					<span class="fa fa-star" onclick="checkUncheck"></span>
+					<br>
+					<!-- Pricing -->
+					<span style="font-size:20px;">
+						<b>₹2495.00</b> <strike style="color:rgb(80, 80, 80); font-size:18px;">MRP ₹6195.00</strike>
+							<span style="color:red;">
+								40% OFF
+							</span>
+					</span>
+					<br>
+					<span style="color:green; font-size:13px;">Inclusive of all taxes</span>
+					<br>
+					<!-- Color Selecting Button -->
+					<!-- <span style="font-size:17px;"><b>Colors Available:</b></span>
+					<form>
+						<a href="watch1.html"><img src="watch1.jpg" id="btn" style="border:2px #faa237 solid;"></a>
+						<a href="watch2.html"><img src="watch2.jpeg" id="btn"></a>
+						<a href="watch3.html"><img src="watch3.jpeg" id="btn"></a>
+						<a href="watch4.html"><img src="watch4.jpeg" id="btn"></a>
+					</form> -->
+					<span style="color:#800000;">
+						Instock
+					</span>
+                    <br>
+                    <br>
+                    <form>
+						<label for="address">Delivery Location: </label>
+						<select id="address" style="height:35px; width:200px;">
+							<option value="Address 1">Address 1</option>
+							<option value="Address 2">Address 2</option>
+						</select>
+						<br><br>
+						<br>
+							<a href="cart.html" class="CBB" style="padding:10px 60px;  border: 2px yellow solid; background-color:yellow;margin-left:50px;">
+								Add to Cart
+							</a>
+							<a href="checkout.html" class="CBB" style="padding:10px 70px;  margin-left:50px;">
+								Buy Now
+							</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<table style="width:100%; text-align:center;">
+			<tr>
+				<td>
+					<img src="freeshipping.jpg" class="icon-image">
+				</td>
+				<td>
+					<img src="replacement.png" class="icon-image">
+				</td>
+				<td>
+					<img src="warranty.png" class="icon-image">
+				</td>
+				<td>
+					<img src="payondelivery.png" class="icon-image">
+				</td>
+				<td>
+					<img src="securetransaction.png" class="icon-image">
+				</td>
+				<td>
+					<img src="topbrand.png" class="icon-image">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Free Delivery
+				</td>
+				<td>
+					10 Days Replacement
+				</td>
+				<td>
+					12 Months Warranty
+				</td>
+				<td>
+					Pay On Delivery
+				</td>
+				<td>
+					Secure Transaction
+				</td>
+				<td>
+					Top Brand
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<img src="playplus35.webp" width="50%" ><img src="playplus36.webp" width="50%" >
+		<hr>
+		<h2><center>More Info</center></h2>
+		<hr>
+		<center>Call us at XXXX-XXX-XXXX or Email us at customercare@Bonelle.co.in</center>
+		<hr>
+		<h2><center>Share</center></h2>
+		<hr>
+		<div style="display: grid;">
+			<a href="https://www.facebook.com/" target="_blank" style="grid-column-start: 2; grid-column-end: 2;">
+				<i class="fa fa-facebook" style="font-size:40px; color: #4b91f1;"></i>
+			</a>
+			<a href="https://twitter.com/i/flow/login" target="_blank" style="grid-column-start: 3; grid-column-end: 3;">
+				<i class="fa fa-twitter" style="font-size:40px; color: #4b91f1;"></i>
+			</a>
+			<a href="https://www.instagram.com/" target="_blank" style="grid-column-start: 4; grid-column-end: 4;">
+				<i class="fa fa-instagram" style="font-size:40px; color: #4b91f1;"></i>
+			</a>
+			<a href="https://www.snapchat.com/" target="_blank" style="grid-column-start: 5; grid-column-end: 5;">
+				<i class="fa fa-snapchat" style="font-size:40px; color: #4b91f1;"></i>
+			</a>
+			<a href="https://www.whatsapp.com/" target="_blank" style="grid-column-start: 6; grid-column-end: 6;">
+				<i class="fa fa-whatsapp" style="font-size:40px; color: #4b91f1;"></i>
+			</a>
+		</div>
+		<hr>
+		<h2><center>
+			Reviews
+		</h2></center>
+		<hr>
+		<div class="review-container" style="display:block;">
+			Overall Reviews: 
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<br><br>
+			<span style="font-weight:bolder;">Ravi</span>
+			<span>Verified </span><span class="fa fa-check-circle" style="color:green;"></span>
+			<br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<br>
+			Very nice Bag. It looks very cute.<br><br>
+			<form>
+				<input type="text" name ="review" placeholder="Enter Your Review Here" style="width:95%"></input>
+				<button for="review">Post</button>
+			</form><br>
+		</div>
+		<div style="background-color:black; color:white;">
+			<table style="width:100%;">
+				<tr>
+					<th>Customer Services<div class="showHide"><br></div><hr></th>
+					<th>About Bonelle<div class="showHide"><br></div><hr></th>
+					<th>Policies<br><span class="showHide"><br></span><hr></th>
+				</tr>
+				<tr style="background-color:black;">
+					<td><a href="#pay-options" style="color:white;">Payment Options</a></td>
+					<td><a href="#about-us" style="color:white;">About Us</a></td>
+					<td><a href="#returns-and-exchanges" style="color:white;">Returns and Exchanges</a></td>
+				</tr>
+				<tr>
+					<td><a href="#track-order" style="color:white;">Track Order</a></td>
+					<td><a href="#careers" style="color:white;">Careers</a></td>
+					<td><a href="#cancellation" style="color:white;">Cancellation</a></td>
+				</tr>
+				<tr style="background-color:black;">
+					<td><a href="#find-a-store" style="color:white;">Find a Store</a></td>
+					<td><a href="#Warranty-Policies" style="color:white;">FAQs</a></td>
+					<td><a href="#Warranty/Guarantee" style="color:white;">Warranty / Guarantee</a></td>
+				</tr>
+			</table>
+			<div class="hideShow" style="background-color: black;">
+				
+				<hr>
+				<center>
+					<a href="google-play-store"><img src="gpb.webp" height="70px"></a>
+					<a href="app-store"><img src="asb.svg" height="70px"></a>
+				</center>
+			</div>
+			<hr>
+			<center style="color:grey;"><span class="fa fa-copyright"></span> 2024 Bonelle Company Limited. All Rights Reserved.</center><br>	
+		</div>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function PNSlide(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("demo");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+		<script src="cart.js"></script>
+		<script src="search.js"></script>
+	</body>
+</html>

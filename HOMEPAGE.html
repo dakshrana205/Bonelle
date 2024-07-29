@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="body.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Homepage</title>
+  <style>
+  body 
+  {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+.product-section {
+  margin: 1px auto;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-div
+{
+  width: 50%;
+}
+
+.image-div
+{
+  width: 50%;
+}
+
+.product-section h2 
+{
+  margin-bottom: 10px;
+}
+
+.product-section img {
+  
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.explore-button 
+{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+a{
+  text-decoration: none ;
+}
+nav a{
+  color: black;
+  font-size: large;
+  font-weight: 550;
+}
+.jj
+{
+  height: 50px;
+  width: 80px;
+  mix-blend-mode:color white;
+}
+.carousel-inner
+{
+  height: 400px;
+  width: 100%;
+}
+.content {
+  margin-top: 1px;
+  overflow: hidden;/*agar uss margin se bahar hoga tu hide hu jayega*/
+  background-color: black ; 
+  color: white;
+}
+
+.marquee-container {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 100%;/*flex grow factor shrink factor flex basis*/
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .marquee-container {
+    animation-duration: 10s; /* Adjust duration for smaller screens */
+  }
+  .marquee-item {
+  flex: 0 0 auto/*flex glow factor shrink factor flex basis*/
+}
+}
+@media (max-width: 767px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .content-div,
+  .image-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<body>
+  <header>
+    <img class="jj" src="Screenshot 2024-02-21 at 8.10.52 PM.png">
+    <nav>
+      <ul>
+        <li><a href="HOMEPAGE.html">HOME</a></li>
+        <li><a href="loginsignup.html">SIGNIN</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="watches.html">
+            <img  src="lay1.jpeg" height="395" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="bags.html">
+            <img  src="lay2.png" height="395" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="eyewear.html">
+            <img  src="lay3.webp"  class="d-block w-100" alt="...">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="content">
+      <div class="marquee-container">
+        <span class="marquee-item header-promotion">Use code FIRST and Get 40% OFF* on  Watches over Rs 3000. Maximum Discount: Rs.500. T&amp;C Apply</span>
+        <span class="marquee-item header-promotion">Use code FIRST and Get 40% OFF* on  Watches over Rs 3000. Maximum Discount: Rs.500. T&amp;C Apply</span>
+        <span class="marquee-item header-promotion">Get 10% cashback on payment via Mobikwik Bag over Rs. 899. T&amp;C Apply.</span>
+      </div>
+    </div>
+    <section class="product-section">
+        <div class="content-div"><h2>Watches</h2>
+        <p>Explore timeless elegance and functionality.</p>
+        <a href="watches.html" class="explore-button">Explore Watches</a></div>
+        <div class="image-div"> <img class="jj" src="watchhomepage.jpg" alt="Watches" style="height: 300px; width: 400px;"></div>
+    </section>
+    <section class="product-section">
+      <div class="image-div"><img class="jj" src="Glasses-homepage (2).png" alt="Glasses" style="height: 250px; width: 300px;"></div>
+      <div class="content-div"><h2>Glasses</h2>
+      <p>Find the perfect frame to express your style.</p>
+      <a href="eyewear.html" class="explore-button">Explore Glasses</a></div>
+    </section>
+    <section class="product-section">
+      <div class="content-div g"><h2>Bags</h2>
+      <p>Carry your essentials in style and comfort.</p>
+      <a href="bags.html" class="explore-button">Explore Bags</a></div>
+      <div class="image-div" ><img class="jj" src="Bags-homepage.png" alt="Bags" style="height: 300px; width: 350px;"></div>
+    </section>
+  </main>
+  <div style="background-color:black; color:white;">
+    <table style="width:100%;">
+      <tr>
+        <th>Customer Services<div class="showHide"><br></div><hr></th>
+        <th>About Products<div class="showHide"><br></div><hr></th>
+        <th>Policies<br><span class="showHide"><br></span><hr></th>
+      </tr>
+      <tr style="background-color:black;">
+        <td><a href="#pay-options" style="color:white;">Payment Options</a></td>
+        <td><a href="#about-us" style="color:white;">About Us</a></td>
+        <td><a href="#returns-and-exchanges" style="color:white;">Returns and Exchanges</a></td>
+      </tr>
+      <tr>
+        <td><a href="#track-order" style="color:white;">Track Order</a></td>
+        <td><a href="careers" style="color:white;">Careers</a></td>
+        <td><a href="#cancellation" style="color:white;">Cancellation</a></td>
+      </tr>
+      <tr style="background-color:black;">
+        <td><a href="#find-a-store" style="color:white;">Find a Store</a></td>
+        <td><a href="#Warranty-Policies" style="color:white;">FAQs</a></td>
+        <td><a href="#Warranty/Guarantee" style="color:white;">Warranty / Guarantee</a></td>
+      </tr>
+    </table>
+    <div class="hideShow" style="background-color: black;">
+      
+      <hr>
+      <center>
+        <a href="google-play-store"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3IR789QVKneMt8qNTalw71CmNPuOfoIvtTCWXffTKgXTHzDIPSGuN9CCLBXCvuzpd1g&usqp=CAU" height="70px"></a>
+        <a href="app-store"><img src="https://static.vecteezy.com/system/resources/previews/021/496/240/original/app-store-logo-icon-software-apple-phone-symbol-white-design-mobile-illustration-with-black-background-free-vector.jpg" height="70px"></a>
+      </center>
+    </div>
+    <hr>
+    <center style="color:grey;"><span class="fa fa-copyright"></span> 2024 Bonelle Company Limited. All Rights Reserved.</center><br>	
+  </div>
+  <footer>
+    <p>&copy; Bonelle 2024</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

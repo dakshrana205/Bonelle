@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width, initial-scale=1.0">
+	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="search.css">
+	<link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+	<!-- Load icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<title>omniwatches</title>
+	<body style="font-family:Verdana; background-color: #EAEDED;">
+		<!--Navigation Bar Starts-->
+		<div class="navbar" id="mynavbar" style="position:fixed;">
+			<a href="HOMEPAGE.html"><img src="Screenshot 2024-02-21 at 8.10.52 PM.png" height="30px" class="res-logo"></a>
+			<div>
+				<a href="watches.html">Watches</a>
+				<a href="eyewear.html">Eye Wear</a>
+				<a href="bags.html">Bags</a>
+				<a href="loginsignup.html" class="sign-in" style="float:right;">Sign In</a>
+				<form>
+					<button type="submit" class="cart-search" style="width:40px;" formaction="cart.html">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+					</button>
+				</form>
+				<button type="submit" class="cart-search"onclick="dropFunction()" style="width:40px;">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+			<a href="#dropdown" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+        <br>
+        <br>
+        <br>
+        <br>
+		<div id="myDropdown" class="dropdown-content">
+			<input type="search" placeholder="Search.." id="myInput" onkeyup="filterFunction()" class="cart-search" style="border: none; border-bottom: 2px solid #4b91f1; margin-right:0px; border-radius: 10px 10px 0px 0px; width: 100%; margin-top: 0px; margin-right:0px;">
+			<br><br>
+			<a href="watches.html">Watches</a>
+			<a href="bags.html">Bag</a>
+			<a href="eyewear.html">Eye Wear</a>
+		</div>
+        <section class="container content-section">
+            <h2 class="section-header">SHOPPING CART</h2>
+            <br>
+            <br>
+            <br>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items .cart">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="watch1.jpg" width="100" height="100">
+                        <span class="cart-item-title">Omniwatch Stunners Blue Dial Metal Strap Watch</span>
+                    </div>
+                    <span class="cart-price cart-column">₹5999.00</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="eyewear1.webp" width="100" height="100">
+                        <span class="cart-item-title">Matte Black Full Frame Aviator Color Blind Glasses</span>
+                    </div>
+                    <span class="cart-price cart-column">₹899.00</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="bag2.webp" width="100" height="100">
+                        <span class="cart-item-title">Nicole & Doris Pom Pom Decor Messenger Bag</span>
+                    </div>
+                    <span class="cart-price cart-column">₹2495.00</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹10292.00</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
+	<script src="search.js"></script>
+    <script src="cart.js"></script>
+</html>

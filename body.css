@@ -1,0 +1,153 @@
+.navbar {
+    overflow: hidden;
+    position:fixed;
+    width:100%;
+    background-color:white;
+    z-index: 998;
+}
+.navbar a {
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.navbar .icon {
+    display:none;
+}
+.cart-search {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: 2px solid #4b91f1;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: white;
+}
+.sign-in {
+    border: 2px solid #4b91f1;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-right:5px;
+}
+.image {
+    height:560px;
+    border-radius:5px;
+}
+.bi {
+    background-image:url('background.jpeg');
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.review-container {
+    display:grid;
+    padding:5px;
+    gap:40px;
+}
+.div1 {
+    grid-column-start:1;
+    grid-column-end:1;
+}
+.div2 {
+    grid-column-start:2;
+    grid-column-end:2;
+    line-height:1.8;
+}
+.checked {
+    color: orange;
+}
+#btn {
+    height:130px;
+    border:2px grey solid;
+}
+.CBB {
+    color: black;
+    background-color:#faa237;
+    height:40px;
+    width:200px;
+    border:2px #faa237 solid;
+    border-radius:50px;
+    margin-right:20px;
+}
+.icon-image {
+    height:40px;
+    width:40px;
+}
+table th {
+    text-align:center;
+    padding: 15px 15px;
+}
+table td {
+    text-align:center;
+    padding:15px 15px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.hideShow {
+    display:none;
+}
+@media screen and (max-width: 640px) {
+    .navbar {
+        width:100%;
+    }
+    .navbar div:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar .icon {
+        display:block;
+        float:right;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display:block;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive div {
+        float: none;
+        display: block;
+    }
+    .bi {
+        background-image:none;
+        background-repeat:none;
+        background-size:none;
+    }
+    .res-logo {
+        height:40px;
+    }
+    .hideShow {
+        display:block;
+    }
+    .icon-image {
+        height:40px;
+        width:40px;
+    }
+    .hide {
+        display:none;
+    }
+    .showHide {
+        display:none;
+    }
+}
